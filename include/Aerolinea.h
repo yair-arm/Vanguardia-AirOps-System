@@ -12,9 +12,9 @@ private:
     Vuelo*** itinerario;
     std::string* nombreDias;
     int* vuelosPorDia;
-    
+
 public:
-    Aerolinea(std::string nombre, int numDias, std::string* nombreDias, int* vuelosPorDia, Vuelo*** itinerario);
+    Aerolinea(std::string nombre, int numDias, std::string* nombreDias, int* vuelosPorDia);
     ~Aerolinea();
     void mostrarInformacion();
     void agregarVuelo(int diaIdx, int vueloIdx, Vuelo* vuelo);
