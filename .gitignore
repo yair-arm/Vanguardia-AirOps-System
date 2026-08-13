@@ -1,0 +1,16 @@
+# Vault interno de trabajo (documentación de conocimiento del proyecto)
+Vault/
+.obsidian/
+
+# Compilación y binarios
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.ilk
+*.pdb
+compile_commands.json
+
+# Datos generados en runtime
+datos.json
