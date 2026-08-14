@@ -14,8 +14,8 @@ Verificar que el sistema:
 
 | Herramienta | Resultado | Observaciones |
 |---|---|---|
-| g++ (C++17) | ⏳ Pendiente | Comando: `g++ -std=c++17 -Iinclude src/*.cpp -o aerolineas` |
-| AddressSanitizer | ⏳ Pendiente | Comando: `g++ -std=c++17 -fsanitize=address -g -Iinclude src/*.cpp -o aerolineas_asan` |
+| g++ (C++17) | ⏳ Pendiente | Comando: `g++ -std=c++17 -Iinclude main.cpp src/*.cpp -o aerolineas` |
+| AddressSanitizer | ⏳ Pendiente | Comando: `g++ -std=c++17 -fsanitize=address -g -Iinclude main.cpp src/*.cpp -o aerolineas_asan` |
 | Valgrind | ⏳ Pendiente | `valgrind --leak-check=full ./aerolineas` |
 
 ## 2. Escenarios de prueba

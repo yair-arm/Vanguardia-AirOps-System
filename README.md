@@ -10,7 +10,8 @@ Administra la agenda semanal de 3 aerolíneas precargadas (Avianca, SATENA y Cli
 
 ```
 ├── include/       # Cabeceras .h (Avion, Vuelo, Aerolinea, GestorJSON, InterfazConsola)
-├── src/           # Implementaciones .cpp + main.cpp
+├── src/           # Implementaciones .cpp de las clases
+├── main.cpp       # Punto de entrada (raíz)
 ├── docs/          # Documentación entregable (especificación JSON, guías, UML)
 │   └── uml/       # Diagrama UML final
 └── Vault/         # Documentación interna de trabajo (gitignored)
@@ -29,7 +30,7 @@ Administra la agenda semanal de 3 aerolíneas precargadas (Avianca, SATENA y Cli
 Requisitos: g++ (C++17) y `nlohmann/json` en `include/`. Ver [Guía de compilación](docs/Guia-de-Compilacion.md).
 
 ```bash
-g++ -std=c++17 -Iinclude src/*.cpp -o aerolineas
+g++ -std=c++17 -Iinclude main.cpp src/*.cpp -o aerolineas
 ./aerolineas
 ```
 

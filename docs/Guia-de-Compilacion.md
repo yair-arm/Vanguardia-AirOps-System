@@ -13,7 +13,8 @@ Requisitos y pasos para compilar y ejecutar el sistema Vanguardia AirOps.
 ```
 .
 ├── include/            # cabeceras .h (+ json.hpp)
-├── src/                # implementaciones .cpp + main.cpp
+├── src/                # implementaciones .cpp de las clases
+├── main.cpp            # punto de entrada (raíz del proyecto)
 └── datos.json          # archivo de datos (se crea/lee en runtime)
 ```
 
@@ -22,14 +23,16 @@ Requisitos y pasos para compilar y ejecutar el sistema Vanguardia AirOps.
 ### Opción 1: g++ directo
 
 ```bash
-g++ -std=c++17 -Iinclude src/*.cpp -o aerolineas
+g++ -std=c++17 -Iinclude main.cpp src/*.cpp -o aerolineas
 ```
 
 En Windows con MinGW:
 
 ```powershell
-g++ -std=c++17 -Iinclude src/*.cpp -o aerolineas.exe
+g++ -std=c++17 -Iinclude main.cpp src/*.cpp -o aerolineas.exe
 ```
+
+> Nota: `main.cpp` vive en la raíz; por eso se lista aparte de `src/*.cpp` (que solo contiene las implementaciones de las clases).
 
 ### Opción 2: Makefile (próximamente)
 
@@ -51,7 +54,7 @@ El programa busca `datos.json` en el directorio de trabajo. Si no existe, `carga
 Linux/macOS con AddressSanitizer:
 
 ```bash
-g++ -std=c++17 -fsanitize=address -g -Iinclude src/*.cpp -o aerolineas_asan
+g++ -std=c++17 -fsanitize=address -g -Iinclude main.cpp src/*.cpp -o aerolineas_asan
 ./aerolineas_asan
 ```
 
