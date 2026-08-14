@@ -16,9 +16,9 @@ private:
 public:
     Aerolinea(std::string nombre, int numDias, std::string* nombreDias, int* vuelosPorDia);
     ~Aerolinea();
-    void mostrarInformacion();
-    void agregarVuelo(int diaIdx, int vueloIdx, Vuelo* vuelo);
-    void eliminarVuelo(int diaIdx, int vueloIdx);
+    std::string mostrarInformacion() const;
+    bool agregarVuelo(int diaIdx, int vueloIdx, Vuelo* vuelo);
+    bool eliminarVuelo(int diaIdx, int vueloIdx);
 };
 
 #endif
