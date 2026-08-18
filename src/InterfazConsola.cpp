@@ -72,6 +72,46 @@ void InterfazConsola::cancelarVuelo() {
     }
 }
 
+void InterfazConsola::crearVuelo() {
+    int aero, dia, pos;
+    std::cout << "Aerolinea (0-2): ";
+    std::cin >> aero;
+    std::cout << "Dia: ";
+    std::cin >> dia;
+    std::cout << "Posicion: ";
+    std::cin >> pos;
+
+    if (aero < 0 || aero >= 3 || aerolineas[aero] == nullptr) {
+        std::cout << "Aerolinea invalida.\n";
+        return;
+    }
+
+    std::string origen, destino, horario, avionId;
+    std::cout << "Origen: ";
+    std::cin >> origen;
+    std::cout << "Destino: ";
+    std::cin >> destino;
+    std::cout << "Horario: ";
+    std::cin >> horario;
+    std::cout << "Avion (id): ";
+    std::cin >> avionId;
+
+    Avion* avion = buscarAvion(avionId);
+    if (avion == nullptr) {
+        std::cout << "Avion no encontrado en la flota.\n";
+        return;
+    }
+
+    Vuelo* nuevoVuelo = new Vuelo(origen, destino, horario, avion);
+    if (aerolineas[aero]->agregarVuelo(dia, pos, nuevoVuelo)) {
+        std::cout << "Vuelo creado.\n";
+        gestor.guardarDatos(aerolineas, aviones, numAviones);
+    } else {
+        delete nuevoVuelo;
+        std::cout << "No se pudo crear: casilla ocupada o indice invalido.\n";
+    }
+}
+
 void InterfazConsola::modificarVuelo() {
     int aero, dia, pos;
     std::cout << "Aerolinea (0-2): ";
@@ -120,8 +160,9 @@ void InterfazConsola::iniciarMenu() {
         std::cout << "  VANGUARDIA AIR-OPS - Aeropuerto VVC\n";
         std::cout << "==========================================\n";
         std::cout << "  1. Ver itinerarios\n";
-        std::cout << "  2. Modificar vuelo\n";
-        std::cout << "  3. Cancelar vuelo\n";
+        std::cout << "  2. Crear vuelo\n";
+        std::cout << "  3. Modificar vuelo\n";
+        std::cout << "  4. Cancelar vuelo\n";
         std::cout << "  0. Salir\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
@@ -131,9 +172,12 @@ void InterfazConsola::iniciarMenu() {
                 mostrarItinerarios();
                 break;
             case 2:
-                modificarVuelo();
+                crearVuelo();
                 break;
             case 3:
+                modificarVuelo();
+                break;
+            case 4:
                 cancelarVuelo();
                 break;
             case 0:

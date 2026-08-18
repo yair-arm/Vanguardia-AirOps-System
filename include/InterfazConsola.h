@@ -15,6 +15,7 @@ private:
     int numAviones;
 
     void mostrarItinerarios();
+    void crearVuelo();
     void modificarVuelo();
     void cancelarVuelo();
     Avion* buscarAvion(std::string id) const;

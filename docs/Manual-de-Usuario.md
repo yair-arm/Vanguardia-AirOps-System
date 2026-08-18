@@ -21,8 +21,9 @@ Al iniciar, el programa muestra:
   VANGUARDIA AIR-OPS — Aeropuerto VVC
 ==========================================
   1. Ver itinerarios
-  2. Modificar vuelo
-  3. Cancelar vuelo
+  2. Crear vuelo
+  3. Modificar vuelo
+  4. Cancelar vuelo
   0. Salir
 Seleccione una opción:
 ```
@@ -33,7 +34,15 @@ Seleccione una opción:
 
 Muestra la agenda semanal de cada aerolínea: por cada día y posición, el vuelo (origen → destino, horario) con su avión asignado y la cantidad de pasajeros. Las posiciones sin vuelo se muestran como **Libre**.
 
-### 2. Modificar vuelo (Update)
+### 2. Crear vuelo (Create)
+
+1. Selecciona la aerolínea (0-2).
+2. Indica el día y la posición donde crear el vuelo (debe estar **Libre**).
+3. Ingresa origen, destino y horario del vuelo.
+4. Elige el avión de la flota (por `id`).
+5. El vuelo se crea en la posición indicada y los cambios se guardan en el JSON.
+
+### 3. Modificar vuelo (Update)
 
 1. Selecciona la aerolínea (0-2).
 2. Indica el día y la posición del vuelo a modificar (debe existir un vuelo ahí).
@@ -42,7 +51,7 @@ Muestra la agenda semanal de cada aerolínea: por cada día y posición, el vuel
 5. El vuelo se recrea con los datos nuevos y la capacidad de pasajeros se actualiza automáticamente.
 6. Los cambios se guardan en el JSON.
 
-### 3. Cancelar vuelo (Delete)
+### 4. Cancelar vuelo (Delete)
 
 1. Selecciona la aerolínea (0-2).
 2. Indica el día y la posición del vuelo a cancelar (debe existir un vuelo ahí).
