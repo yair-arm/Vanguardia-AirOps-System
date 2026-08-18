@@ -10,18 +10,18 @@
       "dias": ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"],
       "vuelosPorDia": [3, 2, 3, 2, 3],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
-          { "origen": "VVC", "destino": "Medellin", "horario": "09:30", "avionId": "AV-001" },
+        [ { "origen": "Villavicencio", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "Villavicencio", "destino": "Medellin", "horario": "09:30", "avionId": "AV-001" },
           null ],
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "18:00", "avionId": "AV-001" },
+        [ { "origen": "Villavicencio", "destino": "Bogota", "horario": "18:00", "avionId": "AV-001" },
           null ],
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
-          { "origen": "VVC", "destino": "Cali", "horario": "11:00", "avionId": "AV-001" },
+        [ { "origen": "Villavicencio", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "Villavicencio", "destino": "Cali", "horario": "11:00", "avionId": "AV-001" },
           null ],
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "17:00", "avionId": "AV-001" },
+        [ { "origen": "Villavicencio", "destino": "Bogota", "horario": "17:00", "avionId": "AV-001" },
           null ],
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
-          { "origen": "VVC", "destino": "Medellin", "horario": "15:00", "avionId": "AV-001" },
+        [ { "origen": "Villavicencio", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "Villavicencio", "destino": "Medellin", "horario": "15:00", "avionId": "AV-001" },
           null ]
       ]
     },
@@ -30,12 +30,12 @@
       "dias": ["Lunes", "Miercoles", "Viernes"],
       "vuelosPorDia": [2, 3, 2],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
-          { "origen": "VVC", "destino": "Bogota", "horario": "12:00", "avionId": "ST-101" } ],
-        [ { "origen": "VVC", "destino": "Puerto Carreno", "horario": "10:00", "avionId": "ST-101" },
-          { "origen": "VVC", "destino": "Inirida", "horario": "14:00", "avionId": "ST-101" },
+        [ { "origen": "Villavicencio", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
+          { "origen": "Villavicencio", "destino": "Bogota", "horario": "12:00", "avionId": "ST-101" } ],
+        [ { "origen": "Villavicencio", "destino": "Puerto Carreno", "horario": "10:00", "avionId": "ST-101" },
+          { "origen": "Villavicencio", "destino": "Inirida", "horario": "14:00", "avionId": "ST-101" },
           null ],
-        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
+        [ { "origen": "Villavicencio", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
           null ]
       ]
     },
@@ -44,9 +44,9 @@
       "dias": ["Sabado"],
       "vuelosPorDia": [4],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Medellin", "horario": "08:00", "avionId": "CL-201" },
-          { "origen": "VVC", "destino": "Bogota", "horario": "10:00", "avionId": "CL-201" },
-          { "origen": "VVC", "destino": "Puerto Gaitan", "horario": "13:00", "avionId": "CL-201" },
+        [ { "origen": "Villavicencio", "destino": "Medellin", "horario": "08:00", "avionId": "CL-201" },
+          { "origen": "Villavicencio", "destino": "Bogota", "horario": "10:00", "avionId": "CL-201" },
+          { "origen": "Villavicencio", "destino": "Puerto Gaitan", "horario": "13:00", "avionId": "CL-201" },
           null ]
       ]
     }
