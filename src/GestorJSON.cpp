@@ -2,9 +2,8 @@
 #include "Aerolinea.h"
 #include "Avion.h"
 #include "Vuelo.h"
-#include "json.hpp" 
+#include "json.hpp"
 #include <fstream>
-#include <iostream>
 
 using json = nlohmann::json;
 
@@ -19,7 +18,7 @@ bool GestorJSON::cargarDatos(Aerolinea* outAerolineas[], Avion* outAviones[], in
     json j = json::parse(archivo, nullptr, false);
     
     if (j.is_discarded()) {
-        std::cerr << "Error al leer JSON: Formato incorrecto\n";
+        // JSON invalido: el gestor no imprime; la interfaz informara del fallo
         return false;
     }
 
