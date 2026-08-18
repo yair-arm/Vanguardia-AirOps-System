@@ -21,7 +21,7 @@ Administra la agenda semanal de 3 aerolíneas precargadas (Avianca, SATENA y Cli
 
 - 3 aerolíneas precargadas desde JSON: Avianca (L-V, Bogotá), SATENA (L-Mi-V, Bogotá/Mitú/Puerto Carreño/Inírida), Clic Air (S, Medellín/Bogotá/Puerto Gaitán)
 - Agenda semanal como matriz 3D dinámica (`Vuelo***`)
-- CRUD: consultar itinerarios, modificar vuelo (cambia avión → actualiza pasajeros), cancelar vuelo (libera memoria, `nullptr`, avión disponible)
+- CRUD completo: crear vuelo (valida casilla libre), consultar itinerarios, modificar vuelo (cambia avión → actualiza pasajeros), cancelar vuelo (libera memoria, `nullptr`, avión disponible)
 - Persistencia JSON (`nlohmann/json`): carga al iniciar, guarda tras cada cambio
 - Gestión segura de memoria dinámica (composición/agregación bien delimitadas)
 
@@ -44,4 +44,4 @@ g++ -std=c++17 -Iinclude main.cpp src/*.cpp -o aerolineas
 ## Notas
 
 - `Vault/` es el repositorio interno de conocimiento del proyecto (contexto, requisitos, decisiones) y no se versiona.
-- `docs/Informe-de-Memoria.md` se completa al validar la Fase 4.
+- Fase 4 completada: validación de memoria (auditoría manual) y persistencia verificada en [Informe de memoria](docs/Informe-de-Memoria.md).
