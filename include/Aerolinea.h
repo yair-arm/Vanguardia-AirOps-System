@@ -5,7 +5,10 @@
 
 class Vuelo;
 
+class GestorJSON;
+
 class Aerolinea {
+    friend class GestorJSON;
 private:
     std::string nombre;
     int numDias;
