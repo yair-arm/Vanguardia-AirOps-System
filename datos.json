@@ -1,0 +1,39 @@
+{
+  "aviones": [
+    { "id": "AV-001", "modelo": "Airbus A320", "capacidad": 180 },
+    { "id": "ST-101", "modelo": "ATR 42-600", "capacidad": 48 },
+    { "id": "CL-201", "modelo": "Let L-410", "capacidad": 19 }
+  ],
+  "aerolineas": [
+    {
+      "nombre": "Avianca",
+      "dias": ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"],
+      "vuelosPorDia": [2, 2, 2, 2, 2],
+      "itinerario": [
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" }, null ],
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "18:00", "avionId": "AV-001" }, null ],
+        [ null, null ],
+        [ null, null ],
+        [ null, null ]
+      ]
+    },
+    {
+      "nombre": "SATENA",
+      "dias": ["Lunes", "Miercoles", "Viernes"],
+      "vuelosPorDia": [2, 2, 2],
+      "itinerario": [
+        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" }, null ],
+        [ { "origen": "VVC", "destino": "Puerto Carreno", "horario": "10:00", "avionId": "ST-101" }, null ],
+        [ { "origen": "VVC", "destino": "Inirida", "horario": "14:00", "avionId": "ST-101" }, null ]
+      ]
+    },
+    {
+      "nombre": "Clic Air",
+      "dias": ["Sabado"],
+      "vuelosPorDia": [3],
+      "itinerario": [
+        [ { "origen": "VVC", "destino": "Medellin", "horario": "08:00", "avionId": "CL-201" }, null, null ]
+      ]
+    }
+  ]
+}

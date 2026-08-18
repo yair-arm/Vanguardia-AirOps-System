@@ -12,5 +12,6 @@ build/
 *.pdb
 compile_commands.json
 
-# Datos generados en runtime
-datos.json
+# Datos iniciales del sistema (versionados para que el repo sea autocontenido;
+# el programa reescribe el archivo localmente en runtime)
+datos_local.json
