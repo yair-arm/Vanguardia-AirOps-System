@@ -8,31 +8,46 @@
     {
       "nombre": "Avianca",
       "dias": ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"],
-      "vuelosPorDia": [2, 2, 2, 2, 2],
+      "vuelosPorDia": [3, 2, 3, 2, 3],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" }, null ],
-        [ { "origen": "VVC", "destino": "Bogota", "horario": "18:00", "avionId": "AV-001" }, null ],
-        [ null, null ],
-        [ null, null ],
-        [ null, null ]
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "VVC", "destino": "Medellin", "horario": "09:30", "avionId": "AV-001" },
+          null ],
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "18:00", "avionId": "AV-001" },
+          null ],
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "VVC", "destino": "Cali", "horario": "11:00", "avionId": "AV-001" },
+          null ],
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "17:00", "avionId": "AV-001" },
+          null ],
+        [ { "origen": "VVC", "destino": "Bogota", "horario": "06:00", "avionId": "AV-001" },
+          { "origen": "VVC", "destino": "Medellin", "horario": "15:00", "avionId": "AV-001" },
+          null ]
       ]
     },
     {
       "nombre": "SATENA",
       "dias": ["Lunes", "Miercoles", "Viernes"],
-      "vuelosPorDia": [2, 2, 2],
+      "vuelosPorDia": [2, 3, 2],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" }, null ],
-        [ { "origen": "VVC", "destino": "Puerto Carreno", "horario": "10:00", "avionId": "ST-101" }, null ],
-        [ { "origen": "VVC", "destino": "Inirida", "horario": "14:00", "avionId": "ST-101" }, null ]
+        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
+          { "origen": "VVC", "destino": "Bogota", "horario": "12:00", "avionId": "ST-101" } ],
+        [ { "origen": "VVC", "destino": "Puerto Carreno", "horario": "10:00", "avionId": "ST-101" },
+          { "origen": "VVC", "destino": "Inirida", "horario": "14:00", "avionId": "ST-101" },
+          null ],
+        [ { "origen": "VVC", "destino": "Mitu", "horario": "07:30", "avionId": "ST-101" },
+          null ]
       ]
     },
     {
       "nombre": "Clic Air",
       "dias": ["Sabado"],
-      "vuelosPorDia": [3],
+      "vuelosPorDia": [4],
       "itinerario": [
-        [ { "origen": "VVC", "destino": "Medellin", "horario": "08:00", "avionId": "CL-201" }, null, null ]
+        [ { "origen": "VVC", "destino": "Medellin", "horario": "08:00", "avionId": "CL-201" },
+          { "origen": "VVC", "destino": "Bogota", "horario": "10:00", "avionId": "CL-201" },
+          { "origen": "VVC", "destino": "Puerto Gaitan", "horario": "13:00", "avionId": "CL-201" },
+          null ]
       ]
     }
   ]
