@@ -37,9 +37,10 @@ Muestra la agenda semanal de cada aerolínea: por cada día y posición, el vuel
 
 1. Selecciona la aerolínea (0-2).
 2. Indica el día y la posición del vuelo a modificar (debe existir un vuelo ahí).
-3. Elige el nuevo avión de la flota (por `id`).
-4. El vuelo se recrea con el nuevo avión y la capacidad de pasajeros se actualiza automáticamente.
-5. Los cambios se guardan en el JSON.
+3. Ingresa los nuevos datos del vuelo: origen, destino y horario.
+4. Elige el nuevo avión de la flota (por `id`).
+5. El vuelo se recrea con los datos nuevos y la capacidad de pasajeros se actualiza automáticamente.
+6. Los cambios se guardan en el JSON.
 
 ### 3. Cancelar vuelo (Delete)
 
