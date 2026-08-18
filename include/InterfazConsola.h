@@ -13,6 +13,7 @@ private:
     Aerolinea* aerolineas[3];
     Avion** aviones;
     int numAviones;
+    bool cargaExitosa;
 
     void mostrarItinerarios();
     void crearVuelo();

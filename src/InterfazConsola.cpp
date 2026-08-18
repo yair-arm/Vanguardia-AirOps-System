@@ -6,7 +6,7 @@
 
 const int MAX_AVIONES = 100;
 
-InterfazConsola::InterfazConsola() : gestor("datos.json"), numAviones(0) {
+InterfazConsola::InterfazConsola() : gestor("datos.json"), numAviones(0), cargaExitosa(false) {
     aerolineas[0] = nullptr;
     aerolineas[1] = nullptr;
     aerolineas[2] = nullptr;
@@ -18,11 +18,15 @@ InterfazConsola::InterfazConsola() : gestor("datos.json"), numAviones(0) {
 
     if (!gestor.cargarDatos(aerolineas, aviones, numAviones)) {
         std::cout << "No se pudo cargar datos.json (verifique que exista y sea valido).\n";
+    } else {
+        cargaExitosa = true;
     }
 }
 
 InterfazConsola::~InterfazConsola() {
-    gestor.guardarDatos(aerolineas, aviones, numAviones);
+    if (cargaExitosa) {
+        gestor.guardarDatos(aerolineas, aviones, numAviones);
+    }
 
     for (int i = 0; i < 3; i++) {
         delete aerolineas[i];

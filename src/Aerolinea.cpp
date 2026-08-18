@@ -68,7 +68,7 @@ std::string Aerolinea::mostrarInformacion() const {
                     << " | " << vuelo->getHorario() << " | ";
                 Avion* avion = vuelo->getAvionAsignado();
                 if (avion != nullptr) {
-                    out << avion->getId();
+                    out << avion->getId() << " | " << vuelo->getPasajeros() << " pasajeros";
                 } else {
                     out << "Sin avion";
                 }
